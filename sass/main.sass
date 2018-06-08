@@ -1,0 +1,963 @@
+$default-font:    Helvetica, sans-serif
+
+body
+	background-color: #fff
+	font-family: $default-font 
+	font-size: 16px
+	position: relative
+	opacity: 1
+	min-width: 320px
+	margin: 0
+	line-height: 24px
+	color: #fff
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+a
+	text-decoration: none
+	color: #fff
+
+.main-header
+	background-image: url('../img/top-bg.jpg')
+	background-repeat: no-repeat;
+	background-position: top center;
+	min-height: 923px;
+	//background-size: cover
+	position: relative
+	display: flex
+	flex-direction: column
+
+.container
+	background-color: rgba(0, 0, 0, 0.53)
+
+.top_line
+	display: flex
+	justify-content: space-between
+	width: 80%
+	margin: auto	
+	padding: 25px 0
+	color: #fff
+	align-items: center
+
+.logo
+	flex-grow: 1.5
+	span
+		font-family: 'Allura', cursive
+		font-size: 30px
+
+.menu
+	flex: 3 2 auto	
+
+	.nav-bar
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+
+		li
+			font-family: "Alegreya", $default-font
+			font-size: 14px
+			text-transform: uppercase
+			letter-spacing: 5px
+
+.icon-bar
+	flex-grow: 1
+	display: flex
+	justify-content: flex-end
+
+	ul
+		display: inline-flex
+
+		li
+			.fbook
+				padding: 0 30px
+
+.menu_min
+	display: none
+	position: relative
+
+	.menu_icon
+		display: inline-flex
+		flex-direction: column
+		width: 45px
+		height: 40px
+		position: relative
+		cursor: pointer
+
+		span
+			height: 10px
+			width: 100%
+			margin: 2px 0
+			background: #fff
+			border-radius: 5px
+			opacity: 1
+			left: 0
+			transform: rotate(0deg)
+			transition: .25s ease-in-out
+			position: absolute
+
+			&:nth-child(1)
+				top: 0
+			&:nth-child(2), &:nth-child(3) 
+				top: 13px
+			&:nth-child(4)
+				top: 26px
+
+	.menu_min-link
+		display: none
+		font-family: "Alegreya", $default-font
+		font-size: 14px
+		text-transform: uppercase
+		letter-spacing: 5px
+
+
+.top_content
+	display: inline-flex
+	flex-direction: column
+	margin: auto
+	align-items: center
+	//background: radial-gradient(center, #564f4c00b0 10%, #564f4c00 80%);
+
+	h1
+		font-family: "PlayfairDisplay"
+		font-size: 92px
+		letter-spacing: 10px
+		margin:
+			bottom: 35px
+			top: 25px
+
+		&:after
+			content: ''
+			display: block
+			background-image: url('../img/dashed_line.png')
+			background-repeat: no-repeat
+			background-position: center
+			min-height: 12px
+			margin-top: 100px
+
+	.top-text
+		width: 60%
+		text-align: center
+
+		span
+			font-family: "Montserrat", $default-font 
+			line-height: 36px
+			font-size: 24px
+			letter-spacing: 2px
+
+	.btn-top 
+		cursor: pointer
+		margin-top: 60px
+		background-color: #6c696282
+		border: 1px dashed #9e9c93
+		font-family: "Alegreya", $default-font 
+		font-weight: bold
+		text-transform: uppercase
+		letter-spacing: 5px
+		font-size: 14px
+		color: #fff
+		padding: 15px 40px
+
+		&:hover
+			background-color: #6c6962db
+			box-shadow: 5px 5px 20px rgba(0,0,0,0.5)
+
+.bottom_logo
+	background-image: url('../img/border_bread.png')
+	background-repeat: no-repeat
+	display: inline-flex
+	margin: auto
+	min-height: 106px
+	min-width: 106px
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translate(-50%, 50%)
+	justify-content: center
+	align-items: center
+	z-index: 99
+
+	.bottom_border
+		background-color: #fff
+		background-image: url('../img/bread.png')
+		background-repeat: no-repeat
+		background-position: center
+		display: inline-flex
+		min-width: 50px
+		height: 50px
+		padding: 15px
+		border-radius: 50px 
+		transition: transform 1s ease-out 0.5s
+
+		&:hover
+			transform: rotate(360deg)
+
+.product
+	background-image: url('../img/content_art_bg.jpg')
+	background-repeat: repeat;
+	background-position: top center;
+	position: relative
+	display: flex
+	flex-wrap: wrap
+	flex-direction: row
+	margin-top: 10px
+	z-index: 1
+	justify-content: space-around
+	padding-bottom: 40px
+
+.product_left
+	display: flex
+	flex-direction: column
+	text-align: center
+	min-width: 630px
+	padding-top: 100px
+
+	h2
+		font-size: 36px
+		font-family: "Alegreya", $default-font
+		font-weight: bold
+		line-height: 30px
+		color: #56534c
+		letter-spacing: 5px
+		margin: 0
+
+		span
+			font-size: 14px
+			color: #a47d5e
+			text-transform: uppercase
+			letter-spacing: 1px
+
+	p
+		font-size: 14px
+		font-family: "Montserrat", $default-font
+		color: #56534c
+		display: inline-block
+		letter-spacing: 1px
+		max-width: 525px
+		margin: 65px auto 40px
+
+.chef_block
+	h3
+		font-size: 24px
+		font-family: "Alegreya", $default-font
+		font-weight: bold
+		line-height: 30px
+		color: #56534c
+		margin:
+			top: 0
+			bottom: 40px
+
+	.person
+		display: flex
+		justify-content: center
+		align-items: center
+
+		.circl_chef
+			background-image: url("../img/chef_cook.jpg")
+			background-position: 25% 0%
+			height: 100px
+			width: 100px
+			display: inline-flex
+			border-radius: 100%
+
+		span 
+			border:
+				top: 1px #d7d5ca solid
+				bottom: 1px #d7d5ca solid
+			font-size: 24px
+			font-family: "Alegreya", $default-font
+			line-height: 30px
+			color: #56534c
+			margin: 0 25px
+			padding: 15px 20px
+
+	.quote
+		font-size: 24px
+		font-family: 'Herr Von Muellerhoff', cursive
+		line-height: 30px
+		letter-spacing: 2px
+		margin:
+			left: 55px
+			right: 55px
+		
+	span
+		font-size: 60px
+		font-family: "Times New Roman", $default-font
+		line-height: 30px
+		color: #b6b5b2
+
+
+.product_right
+	display: flex
+	max-width: 630px;
+	padding-top: 30px
+
+	.view_eat
+		display: inline-flex
+		flex-direction: row
+		flex-wrap: wrap
+		margin: auto
+		align-items: center
+		justify-content: center
+		position: relative
+
+		@each $name in Art_top_left, Art_top_right, Art_bottom_left, Art_bottom_right
+			.#{$name}
+				background-image: url('../img/#{$name}.jpg')
+				background-color: #fff
+				background-position: center center
+				background-size: cover
+				min-height: 250px
+				min-width: 290px
+				flex-grow: 1
+				margin: 10px 10px
+				height: 1px
+
+				div
+					box-sizing: border-box
+					border: 5px #fff solid
+					height: 92%
+					margin: 10px
+
+		.fond
+			background-image: url('../img/fond.png')
+			background-repeat: no-repeat
+			min-height: 257px
+			min-width: 282px
+			position: absolute
+			z-index: 99
+			display: flex
+			justify-content: center
+			align-items: center
+
+			span
+				font-size: 30px
+				font-family: "Alegreya", $default-font
+				line-height: 36px
+				color: #c9b176
+				text-transform: uppercase
+				text-align: center
+				letter-spacing: 3px
+
+.more_prod
+	background-image: url('../img/work_place.jpg')
+	background-position: center center
+	background-size: cover
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	padding: 120px 0 100px 0
+	position: relative
+
+	.more_prod-block
+		background-color: #fff
+		display: inline-flex
+		min-height: 513px
+		width: 75%
+		z-index: 2
+
+	.food_block
+		display: inline-flex
+		width: 100%
+		flex-wrap: wrap
+		position: relative
+
+		.item_img
+			display: inline-flex
+			position: relative
+			width: 46%
+			overflow-x: hidden
+			min-height: 513px
+			background-image: url('../img/pancakes.jpg')
+			background-repeat: no-repeat
+			background-position: 68% 0
+
+			&:before
+				position: absolute
+				content: ""
+				width: 0
+				height: 0
+				bottom: 0
+				left: 0
+				border-bottom: 51px solid transparent
+				border-left: 56px solid transparent
+				z-index: 2
+
+			&:after
+				position: absolute
+				content: ""
+				width: 0
+				height: 0
+				bottom: 0%
+				left: 0%
+				border-top: 52px solid #f0f0f0
+				border-left: 55px solid #eae9e1
+				box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3)
+				z-index: 2
+
+			img
+				position: absolute
+				left: -320px
+				z-index: 1
+
+
+
+			.rating_side
+				display: inline-flex
+				flex-direction: column
+				align-self: center
+				z-index: 2
+				margin-left: 40px
+
+			i
+				margin: 7px 0
+
+		.bg
+			background-size: cover
+			background-position: center
+
+	.food_info
+		background-image: url('../img/mill.png')
+		background-repeat: no-repeat
+		background-position: bottom right
+		background-color: #fff
+		display: inline-flex
+		flex-direction: column
+		align-items: center
+		width: 54%
+		position: relative
+
+		.elem
+			width: 80%
+		
+		.info_head
+			margin-top: 70px
+
+			h2
+				font-size: 45px
+				font-family: "Alegreya", $default-font
+				font-weight: bold
+				line-height: 30px
+				color: #56534c
+				letter-spacing: 2px
+				margin: 0
+
+			span
+				font-size: 14px
+				color: #c2a894
+				text-transform: uppercase
+				letter-spacing: 1px
+
+		.info_text
+			font-family: "Montserrat", $default-font
+			color: #c7c6c3
+			margin: 70px 0 100px 0
+
+			span
+				word-spacing: 5px
+				letter-spacing: 1px
+
+		.slider
+			display: flex
+			justify-content: center
+			align-items: center
+			position: relative
+			overflow: hidden
+
+			.left
+				color: #dec6b1
+
+			.right
+				color: #5a5750
+
+			.slide
+				width: 90px
+				height: 90px
+				margin: 0 15px
+				border-radius: 100%
+
+			.slide1
+				background-image: url('../img/sandwich.jpg')
+				background-position: 40% 45%
+
+			.slide2
+				background-image: url('../img/strawberry.jpg')
+				background-position: 55% 100%
+
+			.slide3
+				background-image: url('../img/salad.jpg')
+				background-position: 100% 62%
+
+		.circle
+			background-color: #fff
+			border-radius: 100%
+			width: 50px
+			height: 50px
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateX(-50%)
+			z-index: 3
+			text-align: center
+			color: #d8bba3
+			display: inline-flex
+
+			i
+				transform: rotate(90deg)
+
+	.cook_time	
+		background-image: url('../img/field.png')
+		background-color: #fff
+		position: absolute
+		top: 0
+		right: 0
+		display: flex
+		justify-content: center
+		align-items: center
+		transform: translate(50%, -20%)
+		padding: 25px 45px
+		box-shadow: -15px 20px 30px 5px rgba(0, 0, 0, 0.1)
+
+		.time_info
+			display: inline-flex
+			flex-direction: column
+			align-items: center
+			font-family: "Alegreya", $default-font
+			line-height: 30px
+			color: #979285
+			font-size: 14px
+			letter-spacing: 2px
+
+			.text
+				color: #aa8669
+				font-size: 16px
+				text-transform: uppercase
+				font-weight: bold
+				letter-spacing: 1px
+
+			.time
+				color: #dfc691
+				font-size: 74px
+				font-weight: bold
+				letter-spacing: 7px
+				margin: 30px 0 20px 0
+
+.price_block
+	background-image: url('../img/placeholder.jpg')
+	background-position: top center
+	background-repeat-x: no-repeat
+	background-color: #fff
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	width: 100%
+	padding: 90px 0 70px 0
+
+	.f-elem
+		width: 40%
+
+	.price_block-left
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+		line-height: 30px
+		font-family: "Alegreya", $default-font
+
+		.break_img
+			background-image: url('../img/break.png')
+			width: 90px
+			min-height: 27px
+			margin: 15px 0 10px 0
+
+		span
+			color: #dfc691
+			font-size: 36px
+			margin-top: 35px
+
+		h3
+			color: #fff
+			font-size: 50px
+			letter-spacing: 5px
+			margin: 0 0 70px 0
+
+			span
+				font-size: 16px
+				text-transform: uppercase
+				letter-spacing: 1px
+				color: #c8a594
+
+		h4
+			font-size: 26px
+			letter-spacing: 2px
+			color: #fff
+			margin: 0
+
+			span
+				color: #c2beba
+				font-size: 14px
+				letter-spacing: 1px
+
+	.price_block-right
+		display: flex
+		justify-content: flex-end
+		min-width: 470px
+		min-height: 633px
+		margin-top: 20px
+		line-height: 30px
+		font-family: "Alegreya", $default-font
+		color: #56534c
+
+		.notepad
+			display: flex
+			position: relative
+			height: 100%
+
+			.list
+				background-color: #f3f1e9
+				display: flex
+				min-height: 600px
+				position: absolute
+				.weat
+					background-image: url('../img/wheat.png')
+					width: 411px
+					height: 220px
+					position: absolute
+					bottom: 0
+					right: 0
+					z-index: 10
+					transform: translate(58%, 30%)
+
+			.list_1
+				top: 0
+				right: 0
+				z-index: 8
+
+			.list_2
+				right: -25px
+				top: 0
+				transform: scale(0.94)
+				z-index: 4
+				background-color: #dbd8ca
+
+			.list_3
+				right: -49px
+				top: 0
+				transform: scale(0.88)
+				z-index: 2
+				background-color: #c3c0b5
+
+			.list_border
+				display: flex
+				flex-direction: column
+				align-items: center
+				text-align: center
+				margin: 10px
+				padding: 40px 25px 55px 25px
+				border: 1px dashed #9e9c93
+				position: relative
+				overflow: hidden
+
+			.top_text
+				width: 65%
+				display: inline-flex
+				justify-content: space-between
+
+				span
+					font-size: 14px
+					text-transform: uppercase
+					letter-spacing: 2px
+					font-weight: bold
+
+			.list_info
+				display: flex
+				flex-direction: column
+				align-items: center
+
+				h2
+					font-size: 44px
+					line-height: 60px
+					margin: 70px 0 40px 0
+					font-weight: bold
+				p
+					font-size: 14px
+					font-family: "Montserrat", $default-font
+					margin: 0 0 50px 0
+
+				.list_btn
+					background: transparent
+					font-size: 18px
+					color: #a98567
+					letter-spacing: 2px
+					font-weight: bold
+					font-family: "Alegreya", $default-font
+					padding: 15px 70px
+					border: 1px solid #9e9c93
+					text-transform: uppercase
+
+					&:hover
+						background-color: rgba(0, 0, 0, 0.1)
+						box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)
+
+			.list_logo
+				background-image: url('../img/menu-1.png')
+				height: 60px
+				width: 367px
+
+.social
+	background-color: #f3f1e9
+	display: flex
+	flex-wrap: wrap
+
+	.downlod
+		display: flex
+		justify-content: center
+		align-items: center
+		position: fixed
+		width: 100px
+		height: 100px
+		right: 20px
+		top: 0%
+		opacity: 0
+		background: rgba(0, 0, 0, 0.5)
+
+		i
+			color: #fff
+
+		@keyframes swing 
+			15%
+				transform: translateY(30px)
+			30%
+				transform: translateY(-30px)
+			40%
+				transform: translateY(15px)
+			50%
+				transform: translateY(-15px)
+			65%
+				transform: translateY(5px)
+			100%
+				transform: translateY(0)
+
+		&:hover
+			animation: swing 1s ease
+			animation-iteration-count: 1
+
+	.f-elem
+
+	.social_left
+		flex-grow: 1
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		padding-top: 160px
+
+		.social_left-item
+			max-width: 300px
+			min-width: 200px
+			display: inline-flex
+			flex-direction: column
+			align-items: center
+			text-align: center
+			margin-bottom: 55px
+
+			span
+				font-size: 14px
+				font-family: "Montserrat", $default-font
+				color: #56534c
+
+			.caption
+				font-size: 30px
+				font-weight: bold
+				line-height: 30px
+				font-family: "Alegreya", $default-font
+				color: #a47d5e
+				margin-bottom: 20px
+
+		.top .social_left-img
+			background-image: url('../img/wheat.jpg')
+			background-position: 75% 100%
+
+		.center .social_left-img
+			background-image: url('../img/eggs.jpg')
+			background-position: 30% 70%
+
+		.bottom .social_left-img
+			background-image: url('../img/cheese.jpg')
+			background-position: 70% 50%
+
+	.social_left-img
+		width: 100px
+		height: 100px
+		border-radius: 100%
+		margin-bottom: 20px
+		box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1)
+
+
+	.social_right
+		flex-grow: 3
+		display: flex
+		flex-direction: column
+
+		.top_text
+			display: inline-flex
+			justify-content: center
+			padding-top: 90px
+			text-align: center
+			position: relative
+			align-self: flex-start
+
+			.bg_mill
+				background-image: url('../img/dark_mill.png')
+				background-size: cover
+				width: 100px
+				height: 100px
+				top: 10px
+				position: absolute
+
+
+			h2
+				font-size: 45px
+				font-weight: bold
+				line-height: 30px
+				font-family: "Alegreya", $default-font
+				color: #56534c
+				margin: 0
+
+			span
+				color: #c2a894
+				text-transform: uppercase
+				font-size: 14px
+
+		.content
+			background-color: #fff
+			align-items: center
+			width: 90%
+			height: 550px
+			padding: 10px
+			margin: auto
+			box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1)
+
+		.view_block
+			background-image: url('../img/social_img.jpg')
+			background-size: cover
+			height: 100%
+			position: relative
+
+			.view_block-pre
+				background-color: #fff
+				position: absolute
+				bottom: 0
+				left: 0
+				border: 1px dashed #dfc691
+				padding: 13px 28px
+				transform: translate(-20%, 50%)
+				cursor: pointer
+
+				span
+					color: #dfc691
+					font-size: 18px
+					font-weight: bold
+					line-height: 30px
+					font-family: "Alegreya", $default-font
+					letter-spacing: 2px
+
+			.view_block-time_line
+				position: absolute
+				top: 0
+				right: 0
+				display: inline-flex
+				flex-direction: column
+				height: 100%
+				width: 200px
+				transform: scaleY(1.1)
+				box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1)
+
+				span
+					color: #979285
+					font-size: 14px
+					line-height: 30px
+					font-family: "Alegreya", $default-font
+					letter-spacing: 2px
+					font-weight: bold
+
+				.text
+					color: #aa8669
+					font-size: 18px
+					letter-spacing: 3px
+					text-transform: uppercase
+
+				.time
+					color: #56534c
+					font-size: 60px
+					letter-spacing: 7px
+					font-weight: bold
+					margin: 15px 0 15px 0
+
+				.item
+					display: inline-flex
+					flex-direction: column
+					align-items: center
+					justify-content: center
+					flex-grow: 1
+
+
+				.item-1
+					background-color: rgba(255, 255, 255, 0.8)
+					margin-bottom: 1px
+
+				.item-2
+					background-color: rgba(255, 255, 255, 0.8)
+					margin-bottom: 1px
+
+				.item-3
+					background-image: url('../img/field.png')
+					background-color: #fff
+					.time
+						color: #dfc691
+						font-size: 74px
+						letter-spacing: 7px
+						font-weight: bold
+						margin: 30px 0 20px 0
+
+footer
+	background-color: #f3f1e9
+	display: flex
+	padding: 50px 0 70px 0
+
+	.bottom_menu
+		display: inline-flex
+		border-bottom: 1px solid #c2beba
+		border-top: 1px solid #c2beba
+		padding: 30px 20px
+		flex-grow: 2
+
+		ul
+			display: inline-flex
+			align-items: center
+			width: 100%
+			justify-content: space-around
+
+			li
+				text-align: center
+
+			li, a
+				font-family: "Alegreya", $default-font
+				color: #35332f
+				font-size: 14px
+				letter-spacing: 3px
+				text-transform: uppercase
+				font-weight: bold
+				cursor: pointer
+
+	.botom_logo
+		color: #56534c
+		font-family: 'Allura', cursive
+		font-size: 36px
+		letter-spacing: 5px
+		margin: auto
+		flex-grow: 1
+		text-align: center

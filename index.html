@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gustoso</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya:400,700|Playfair+Display:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500i,700,800" rel="stylesheet">
+</head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<div class="top_line">
+				<div class="logo">
+					<span>Gustoso</span>
+				</div>
+				<nav class="menu">
+					<ul class="nav-bar">
+						<li>
+							<a href="#">welcome</a>
+						</li>
+						<li class="tilde">~</li>
+						<li>
+							<a href="#">
+								menu
+							</a>
+						</li>
+						<li class="tilde">~</li>
+						<li>
+							<a href="#">
+								reservations
+							</a>
+						</li>
+						<li class="tilde">~</li>
+						<li>
+							<a href="#">
+								news
+							</a>
+						</li>
+						<li class="tilde">~</li>
+						<li>
+							<a href="#">
+								contact
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="icon-bar">
+					<ul>
+						<li>
+							<a href="#" class="twit">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="fbook">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="inst">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_min">
+					<div class="menu_icon" onclick="toggleMenu();" id="mIcon">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="menu_min">
+				<div class="menu_min-link"  id="mn">
+					<a href="#" class="menu_min-item">
+					welcome</a>
+					<a href="#" class="menu_min-item">menu</a>
+					<a href="#" class="menu_min-item">reservations</a>
+					<a href="#" class="menu_min-item">news</a>
+					<a href="#" class="menu_min-item">contact</a>
+				</div>
+			</div>
+		</div>
+		<div class="top_content">
+			<h1>Pastry with love</h1>
+			<div class="top-text">
+				<span>
+					We’re bringing you fresh ingredients every day in ways you can’t resist.
+				</span>
+			</div>
+			<input type="button" name="getMenu" class="btn-top" value="Our menu">
+		</div>
+		<div class="bottom_logo">
+			<div class="bottom_border"></div>
+		</div>
+	</header>
+	<section class="product"">
+		<div class="product_left elem">
+			<h2>Art of cakes<br><span>we create delicious memories</span></h2>
+			<p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitul ullamcorper ultricies nisi. Nam eget dul. Etlam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.</p>
+			<div class="chef_block">
+				<h3>Chef Cook</h3>
+				<div class="person">
+					<span>Benito</span>
+					<div class="circl_chef"></div>
+					<span>Gaspare</span>
+				</div>
+				<span>&#8220;</span>
+				<p class="quote">
+					Unique creations for unique<br>occasions.
+				</p>
+				<span>&#8222;</span>
+			</div>
+		</div>
+		<div class="product_right elem">
+			<div class="view_eat">
+				<div class="Art_top_left">
+					<div></div>
+				</div>
+				<div class="Art_top_right">
+					<div></div>
+				</div>
+				<div class="Art_bottom_left">
+					<div></div>
+				</div>
+				<div class="Art_bottom_right">
+					<div></div>
+				</div>
+				<div class="fond">
+					<span>tastes so<br>good!</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="more_prod">
+		<div class="more_prod-block">
+			<div class="food_block">
+				<div class="item_img bg">
+					<div class="rating_side">
+						<i class="fas fa-star f"></i>
+						<i class="fas fa-star f"></i>
+						<i class="fas fa-star f"></i>
+						<i class="fas fa-star f"></i>
+						<i class="far fa-star f"></i>
+					</div>
+					<!--<img src="img/pancakes.jpg" alt="pancake" class="view_img">-->
+				</div>
+				<div class="food_info">
+					<div class="info_head elem">
+						<h2>Tasty pancakes
+						<br><span>season favourite</h2>
+					</div>
+					<div class="info_text elem">
+						<span>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ul libero venenatis faucibus. Nullam quis ante. Eclam sit amet orci eget eros faucibus.</span>
+					</div>
+					<div class="slider elem">
+						<div class="pre" onclick="minusDivs();">
+							<i class="fas fa-chevron-circle-left fa-2x left"></i>
+						</div>
+						<div class="slide slide1 bg"></div>
+						<div class="slide slide2 bg"></div>
+						<div class="slide slide3 bg"></div>
+						<div class="next"  onclick="plusDivs();">
+							<i class="fas fa-chevron-circle-right fa-2x right"></i>
+						</div>
+					</div>
+					<div class="circle">
+						<i class="fas fa-bars fa-1x"></i>
+					</div>
+				</div>
+				<div class="cook_time">
+					<div class="time_info">
+						<span class="text">ready in</span>
+						<span class="time">40</span>
+						<span>mins</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="price_block">
+		<div class="price_block-left f-elem">
+			<h3>Breakfast<br><span>7am Breakfast? we’re open!</span></h3>
+			<h4>Full breakfast<br><span>Duis ut tortor, et risus, vulputate pretium</span></h4>
+			<span>$12.49</span>
+			<span class="break_img"></span>
+			<h4>Toast &amp; Jam<br><span>Suspendisse, tempus, nterdum</span></h4>
+			<span>$4.90</span>
+			<span class="break_img"></span>
+			<h4>Muffins<br><span>Fusce eget dui sodales est</span></h4>
+			<span>$3.95</span>
+		</div>
+		<div class="price_block-right f-elem">
+			<div class="notepad">
+				<div class="list list_1">
+					<div class="list_border">
+						<div class="top_text">
+							<span>est.</span>
+							<span>1893</span>
+						</div>
+						<div class="list_logo"></div>
+						<div class="list_info">
+							<h2>Your morning Escape with Flair</h2>
+							<p>Donec vitae sapien ut libero venenatis faucibus.  Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+							<input type="button" name="list_read" class="list_btn" value="read">
+						</div>
+						<div class="weat"></div>
+					</div>
+				</div>
+
+				<div class="list list_2">
+					<div class="list_border">
+						<div class="top_text">
+							<span>est.</span>
+							<span>1893</span>
+						</div>
+						<div class="list_logo"></div>
+						<div class="list_info">
+							<h2>Your morning Escape with Flair</h2>
+							<p>Donec vitae sapien ut libero venenatis faucibus.  Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+							<input type="button" name="list_read" class="list_btn" value="read">
+						</div>
+						<div class="weat"></div>
+					</div>
+				</div>
+
+				<div class="list list_3">
+					<div class="list_border">
+						<div class="top_text">
+							<span>est.</span>
+							<span>1893</span>
+						</div>
+						<div class="list_logo"></div>
+						<div class="list_info">
+							<h2>Your morning Escape with Flair</h2>
+							<p>Donec vitae sapien ut libero venenatis faucibus.  Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+							<input type="button" name="list_read" class="list_btn" value="read">
+						</div>
+						<div class="weat"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="social">
+		<div class="social_left f-elem">
+			<div class="social_left-item top">
+				<div class="social_left-img"></div>
+				<span class="caption">Class aptent</span>
+				<span>Quot alienum persecuti ut eam, nam ad  atqui primis nusquam.</span>
+			</div>
+			<div class="social_left-item center">
+				<div class="social_left-img"></div>
+				<span class="caption">Nulla eget</span>
+				<span>Nullam dictum felis eu pede mollis  pretium Integer tincidunt.</span>
+			</div>
+			<div class="social_left-item bottom">
+				<div class="social_left-img"></div>
+				<span class="caption">Sed nibh purus</span>
+				<span> Aenean eleifend tellus leo ligula,  porttitor eu, consequat vitae.</span>
+			</div>
+		</div>
+		<div class="social_right f-elem">
+			<div class="social_right-item top_text">
+				<div class="bg_mill"></div>
+				<h2>The Jibarito sandwich<br><span>the best sandwich you’ve ever tasted!</span></h2>
+			</div>
+			<div class="social_right-item content">
+				<div class="view_block">
+					<div class="view_block-pre" id="recipe">
+						<span>FULL RECIPE</span>
+					</div>
+					<div class="view_block-time_line">
+						<div class="item item-1">
+							<span class="text">prep</span>
+							<span class="time">15</span>
+							<span>mins</span>
+						</div>
+						<div class="item item-2">
+							<span class="text">cook</span>
+							<span class="time">35</span>
+							<span>mins</span>
+						</div>
+						<div class="item item-3">
+							<span class="text">ready in</span>
+							<span class="time">50</span>
+							<span>mins</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="downlod" id="downlod">
+			<i class="fas fa-file-archive fa-3x"></i>
+		</div>
+	</section>
+	<footer>
+		<nav class="bottom_left-menu bottom_menu">
+			<ul>
+				<li>
+					<a href="#">our menu</a>
+				</li>
+				<li class="tild">~</li>
+				<li>
+					<a href="#">gallery</a>
+				</li>
+				<li class="tild">~</li>
+				<li>
+					<a href="#">culture</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="botom_logo">
+			<span>Gustoso</span>
+		</div>
+		<nav class="bottom_right-menu bottom_menu">
+			<ul>
+				<li>
+					<a href="#">events</a>
+				</li>
+				<li class="tild">~</li>
+				<li>
+					<a href="#">catering</a>
+				</li>
+				<li class="tild">~</li>
+				<li>
+					<a href="#">visit us</a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+
+	<script src="libs/anime/anime.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/script.js" defer></script>
+</body>
+</html>

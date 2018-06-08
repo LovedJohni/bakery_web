@@ -1,0 +1,382 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1260px)
+	.top_line
+		width: 90%
+
+	.more_prod
+		padding: 60px 0
+
+		.food_block
+			.item_img
+				width: 100%
+				z-index: 1
+
+				.rating_side
+					background-color: rgba(0, 0, 0, 0.1)
+					box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.1)
+
+				img
+					left: 0
+
+		.food_info
+			width: 100%
+
+			.info_head
+				margin-top: 40px
+
+			.info_text
+				margin: 40px 0 90px 0
+
+			.slider
+				margin-bottom: 30px
+
+			.circle
+				display: none
+
+		.cook_time
+			z-index: 3
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.price_block
+		.price_block-right
+			.notepad
+				.list_1
+					right: 25px
+				.list_2
+					right: 0
+				.list_3
+					right: -24px
+
+				.list_border
+					padding:
+						left: 15px
+						right: 15px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.top_line
+		.logo
+			padding-right: 15px
+
+		.menu
+			.nav-bar
+				justify-content: center
+
+				.tilde
+					padding: 0 5px
+
+	.top_content
+		h1
+			font-size: 72px
+			margin-top: 0
+
+		.top-text
+			width: 80%
+
+	.more_prod
+		.more_prod-block
+			width: 80%
+
+			.food_block
+				.item_img img
+					left: -40%
+
+		.cook_time
+			padding: 15px 35px
+			transform: translate(20%, -20%)
+
+	.social
+		flex-direction: column
+
+		.social_left
+			order: 1
+			flex-direction: row
+			flex-wrap: wrap
+			padding-top: 100px
+
+		.social_right
+			.top_text
+				align-self: center
+
+			.content
+				margin-top: 50px
+
+	footer
+		.bottom_menu
+			padding: 30px 10px
+
+		.bottom_logo
+			font-size: 28px
+
+
+@media screen and (max-width: 680px)
+	.top_content
+		h1
+			font-size: 44px
+
+	.product_left
+		min-width: 0
+		p
+			max-width: 405px
+
+	.more_prod
+		.more_prod-block
+			width: 90%
+
+			.food_info
+				.slider
+					width: 100%
+
+		.cook_time
+			padding: 15px 25px 
+			transform: translate(15%, -25%)
+
+	.social
+		.social_right
+			.view_block
+				background-position: center
+
+				.view_block-time_line
+					width: 150px
+
+	footer
+		padding: 35px 0 70px 0
+
+		.bottom_menu
+			border: none
+			padding: 0
+			margin: 20px 0
+
+			ul
+				flex-direction: column
+
+
+
+	.container
+		background-color: rgba(0, 0, 0, 0.8)
+
+	.menu ul.nav-bar
+		display: none
+
+	.menu_min
+		display: flex
+		flex-grow: 0
+
+		.menu_icon span 
+			order: -1
+
+	.top_line
+		.logo
+			order: 1
+			flex-grow: 1
+			text-align: center
+			margin-left: 40px
+
+		.menu
+			flex: 0
+			display: none
+
+		.icon-bar
+			order: 2
+			flex-grow: 0
+
+@media screen and (max-width: 680px)
+	.state_open
+		span
+			&:nth-child(1)
+				width: 0%
+				left: 50%
+			&:nth-child(2)
+				transform: rotate(45deg)
+			&:nth-child(3) 
+				transform: rotate(-45deg)
+			&:nth-child(4)
+				width: 0%
+				left: 50%
+
+	.menu_min-link.respons
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 100%
+		background: rgba(0, 0, 0, 0.8)
+		position: absolute
+		top: 0
+		right: 0
+		text-align: center
+
+		a
+			width: 100%
+			padding: 10px 0
+			&:hover
+				background: rgba(0, 0, 0, 0.5)
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.main-header
+		min-height: 100vh
+
+		.top_content
+			h1
+				letter-spacing: 5px
+				margin: 40px 0
+				text-align: center
+				line-height: 40px
+				&:after
+					margin-top: 40px
+
+			.top_text
+				width: 90%
+
+			.btn-top
+				margin-bottom: 70px
+
+	.product_left 
+		p
+			max-width: 300px
+	
+	.chef_block
+		span
+			font-size: 40px
+		.person
+			flex-direction: column
+
+			.circl_chef
+				margin: 20px 0
+
+		.quote
+			margin:
+				left: 5px
+				right: 5px
+
+	.more_prod 
+		.food_block 
+			.item_img 
+				img
+					left: -100%
+
+			.food_info
+				margin-bottom: 50px
+
+				.slider
+					div
+						font-size: 15px
+
+					.slide
+						height: 60px
+						width: 60px
+
+			.cook_time
+				padding: 10px 15px
+				background-size: cover
+
+				.time_info
+					.text
+						font-size: 14px
+					.time
+						font-size: 60px
+						margin: 10px 0
+
+	.price_block
+		padding: 35px 0 70px 0
+
+		.price_block-left
+			width: 80%
+
+			h3
+				margin-bottom: 40px
+				span
+					font-size: 14px
+
+			span
+				margin-top: 20px
+
+		.price_block-right
+			min-width: 300px
+			min-height: 450px
+			.notepad
+				.list
+					min-height: 0
+				.list_1
+					right: 30px
+				.list_2
+					right: 9px
+				.list_3
+					right: -11px
+				.list_border
+					padding:
+						top: 20px
+						bottom: 30px
+				.list_logo
+					display: none
+				.list_info
+					&:before
+						content: ''
+						width: 100%
+						border-bottom: 1px solid
+					h2
+						margin: 15px 0
+						font-size: 26px
+						line-height: 40px
+
+		.cook_time
+			padding: 5px 20px 
+			transform: translate(10%, -25%)
+
+	.social
+		.social_right
+			.top_text
+				h2
+					line-height: 36px
+			.view_block
+				.view_block-pre
+					transform: translate(-10%, 40%)
+					padding: 13px 15px
+					z-index: 8
+
+				.view_block-time_line
+					.text
+						font-size: 16px
+					.time
+						font-size: 50px
+
+			.content
+					height: 450px
+
+	footer
+		flex-direction: column
+		padding: 0
+
+		.bottom_menu
+			margin: 0
+			ul
+				li
+					width: 100%
+					padding: 10px 0
+					&:hover
+						background-color: #eceae4
+				.tild
+					display: none
+
+		.botom_logo
+			order: 1
+			margin: 20px auto
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.more_prod 
+		.food_block 
+			.cook_time
+				transform: translate(0%, 0%)
+		.food_info 
+			.slider 
+				.slide
+					margin: 0 5px
+
+@media only screen and (max-width : 240px)
+	color: red

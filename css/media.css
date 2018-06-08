@@ -1,0 +1,456 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1260px) {
+  .top_line {
+    width: 90%;
+  }
+  .more_prod {
+    padding: 60px 0;
+  }
+  .more_prod .food_block .item_img {
+    width: 100%;
+    z-index: 1;
+  }
+  .more_prod .food_block .item_img .rating_side {
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.1);
+  }
+  .more_prod .food_block .item_img img {
+    left: 0;
+  }
+  .more_prod .food_info {
+    width: 100%;
+  }
+  .more_prod .food_info .info_head {
+    margin-top: 40px;
+  }
+  .more_prod .food_info .info_text {
+    margin: 40px 0 90px 0;
+  }
+  .more_prod .food_info .slider {
+    margin-bottom: 30px;
+  }
+  .more_prod .food_info .circle {
+    display: none;
+  }
+  .more_prod .cook_time {
+    z-index: 3;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .price_block .price_block-right .notepad .list_1 {
+    right: 25px;
+  }
+  .price_block .price_block-right .notepad .list_2 {
+    right: 0;
+  }
+  .price_block .price_block-right .notepad .list_3 {
+    right: -24px;
+  }
+  .price_block .price_block-right .notepad .list_border {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .top_line .logo {
+    padding-right: 15px;
+  }
+  .top_line .menu .nav-bar {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .top_line .menu .nav-bar .tilde {
+    padding: 0 5px;
+  }
+  .top_content h1 {
+    font-size: 72px;
+    margin-top: 0;
+  }
+  .top_content .top-text {
+    width: 80%;
+  }
+  .more_prod .more_prod-block {
+    width: 80%;
+  }
+  .more_prod .more_prod-block .food_block .item_img img {
+    left: -40%;
+  }
+  .more_prod .cook_time {
+    padding: 15px 35px;
+    -webkit-transform: translate(20%, -20%);
+    -ms-transform: translate(20%, -20%);
+    transform: translate(20%, -20%);
+  }
+  .social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .social .social_left {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 100px;
+  }
+  .social .social_right .top_text {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+  .social .social_right .content {
+    margin-top: 50px;
+  }
+  footer .bottom_menu {
+    padding: 30px 10px;
+  }
+  footer .bottom_logo {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .top_content h1 {
+    font-size: 44px;
+  }
+  .product_left {
+    min-width: 0;
+  }
+  .product_left p {
+    max-width: 405px;
+  }
+  .more_prod .more_prod-block {
+    width: 90%;
+  }
+  .more_prod .more_prod-block .food_info .slider {
+    width: 100%;
+  }
+  .more_prod .cook_time {
+    padding: 15px 25px;
+    -webkit-transform: translate(15%, -25%);
+    -ms-transform: translate(15%, -25%);
+    transform: translate(15%, -25%);
+  }
+  .social .social_right .view_block {
+    background-position: center;
+  }
+  .social .social_right .view_block .view_block-time_line {
+    width: 150px;
+  }
+  footer {
+    padding: 35px 0 70px 0;
+  }
+  footer .bottom_menu {
+    border: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  footer .bottom_menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .container {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .menu ul.nav-bar {
+    display: none;
+  }
+  .menu_min {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+  .menu_min .menu_icon span {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+  .top_line .logo {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 40px;
+  }
+  .top_line .menu {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    display: none;
+  }
+  .top_line .icon-bar {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .state_open span:nth-child(1) {
+    width: 0%;
+    left: 50%;
+  }
+  .state_open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .state_open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .state_open span:nth-child(4) {
+    width: 0%;
+    left: 50%;
+  }
+  .menu_min-link.respons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+  }
+  .menu_min-link.respons a {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .menu_min-link.respons a:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .main-header {
+    min-height: 100vh;
+  }
+  .main-header .top_content h1 {
+    letter-spacing: 5px;
+    margin: 40px 0;
+    text-align: center;
+    line-height: 40px;
+  }
+  .main-header .top_content h1:after {
+    margin-top: 40px;
+  }
+  .main-header .top_content .top_text {
+    width: 90%;
+  }
+  .main-header .top_content .btn-top {
+    margin-bottom: 70px;
+  }
+  .product_left p {
+    max-width: 300px;
+  }
+  .chef_block span {
+    font-size: 40px;
+  }
+  .chef_block .person {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .chef_block .person .circl_chef {
+    margin: 20px 0;
+  }
+  .chef_block .quote {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .more_prod .food_block .item_img img {
+    left: -100%;
+  }
+  .more_prod .food_block .food_info {
+    margin-bottom: 50px;
+  }
+  .more_prod .food_block .food_info .slider div {
+    font-size: 15px;
+  }
+  .more_prod .food_block .food_info .slider .slide {
+    height: 60px;
+    width: 60px;
+  }
+  .more_prod .food_block .cook_time {
+    padding: 10px 15px;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .more_prod .food_block .cook_time .time_info .text {
+    font-size: 14px;
+  }
+  .more_prod .food_block .cook_time .time_info .time {
+    font-size: 60px;
+    margin: 10px 0;
+  }
+  .price_block {
+    padding: 35px 0 70px 0;
+  }
+  .price_block .price_block-left {
+    width: 80%;
+  }
+  .price_block .price_block-left h3 {
+    margin-bottom: 40px;
+  }
+  .price_block .price_block-left h3 span {
+    font-size: 14px;
+  }
+  .price_block .price_block-left span {
+    margin-top: 20px;
+  }
+  .price_block .price_block-right {
+    min-width: 300px;
+    min-height: 450px;
+  }
+  .price_block .price_block-right .notepad .list {
+    min-height: 0;
+  }
+  .price_block .price_block-right .notepad .list_1 {
+    right: 30px;
+  }
+  .price_block .price_block-right .notepad .list_2 {
+    right: 9px;
+  }
+  .price_block .price_block-right .notepad .list_3 {
+    right: -11px;
+  }
+  .price_block .price_block-right .notepad .list_border {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .price_block .price_block-right .notepad .list_logo {
+    display: none;
+  }
+  .price_block .price_block-right .notepad .list_info:before {
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid;
+  }
+  .price_block .price_block-right .notepad .list_info h2 {
+    margin: 15px 0;
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .price_block .cook_time {
+    padding: 5px 20px;
+    -webkit-transform: translate(10%, -25%);
+    -ms-transform: translate(10%, -25%);
+    transform: translate(10%, -25%);
+  }
+  .social .social_right .top_text h2 {
+    line-height: 36px;
+  }
+  .social .social_right .view_block .view_block-pre {
+    -webkit-transform: translate(-10%, 40%);
+    -ms-transform: translate(-10%, 40%);
+    transform: translate(-10%, 40%);
+    padding: 13px 15px;
+    z-index: 8;
+  }
+  .social .social_right .view_block .view_block-time_line .text {
+    font-size: 16px;
+  }
+  .social .social_right .view_block .view_block-time_line .time {
+    font-size: 50px;
+  }
+  .social .social_right .content {
+    height: 450px;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0;
+  }
+  footer .bottom_menu {
+    margin: 0;
+  }
+  footer .bottom_menu ul li {
+    width: 100%;
+    padding: 10px 0;
+  }
+  footer .bottom_menu ul li:hover {
+    background-color: #eceae4;
+  }
+  footer .bottom_menu ul .tild {
+    display: none;
+  }
+  footer .botom_logo {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    margin: 20px auto;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .more_prod .food_block .cook_time {
+    -webkit-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+  }
+  .more_prod .food_info .slider .slide {
+    margin: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 240px) {
+  color: red;
+}
